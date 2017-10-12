@@ -75,16 +75,6 @@ function stopAllSound() {
   audioPlayer2Cheated.currentTime = 0;
 }
 
-$('#reset').on('click', function() {
-  resetGame();
-})
-
-$('#start').on('click', function() {
-  startCountdown();
-  var audio = document.getElementById('audio');
-  audio.play();
-})
-
 function checkWinner(input) {
   var p1ShootIndex = input.indexOf(p1Shoot);
   var p2ShootIndex = input.indexOf(p2Shoot);
